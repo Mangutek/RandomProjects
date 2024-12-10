@@ -22,35 +22,35 @@ def game_of_life(dane):
             try:
                 if dane[y-1][x-1] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             try:
                 if dane[y-1][x] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             try:
                 if dane[y-1][x+1] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             try:
                 if dane[y][x-1] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             try:
                 if dane[y][x+1] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             try:
                 if dane[y+1][x-1] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             try:
                 if dane[y+1][x] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             try:
                 if dane[y+1][x+1] == 'X': ile=ile+1
             except:
-                print('NIE')
+                pass
             if dane[y][x] == 'X' and (ile == 2 or ile == 3):
                 tab[y][x] = 'X'
             elif dane[y][x] == '.' and ile == 3:
